@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styleone.css">
+</head>
+<body>
+    <div id="body">
+        <div id="personal">
+            <h1 id="headone">Personal Information</h1>
+            <div id="one">
+               <label for="" id="fnameone">First Name</label>
+                <input type="text" id="fnametwo">
+               <label for="" id="mnameone">Middle Name</label>
+               <input type="text" id="mnametwo">
+            </div>
+            <div id="two">
+               <label for="" id="lnameone">Last Name</label>
+                <input type="text" id="lnametwo">
+               <label for="" id="panone">PAN</label>
+               <input type="text" id="pantwo">
+            </div>
+            <div id="three">
+               <label for="" id="dateone">Date Of Birth</label>
+                <input type="date" id="datetwo">
+               <label for="" id="statusone">Status</label>
+               <input type="text" id="statustwo">
+            </div>
+        </div>
+        <div id="address">
+            <h1 id="headtwo">Address</h1>
+            <div id="one1">
+               <label for="" id="fnameone1">Flat/Door/Block No</label>
+                <input type="text" id="fnametwo1">
+               <label for="" id="mnameone1">Town/City/District</label>
+               <input type="text" id="mnametwo1">
+            </div>
+            <div id="two1">
+               <label for="" id="lnameone1">Name of Premises/Building/Village</label>
+                <input type="text" id="lnametwo1">
+               <label for="" id="panone1">Road/Street/Post Office</label>
+               <input type="text" id="pantwo1">
+            </div>
+            <div id="three1">
+               <label for="" id="dateone2">Area/Locality</label>
+                <input type="text" id="datetwo2">
+               <label for="" id="statusone2">State</label>
+               <input type="text" id="statustwo2">
+            </div>
+            <div id="four">
+               <label for="" id="dateone1">Country</label>
+                <input type="text" id="datetwo1">
+               <label for="" id="statusone1">Pin code</label>
+               <input type="text" id="statustwo1">
+            </div>
+            <div id="five">
+               <label for="" id="dateone12">Employer Category(if in employment)</label>
+                <input type="text" id="datetwo12">
+               <label for="" id="statusone12">Resdential/Office Phone Number with STD code</label>
+               <input type="text" id="statustwo12">
+            </div>
+            <div id="six">
+               <label for="" id="dateone1">Income Tax Ward/Circle</label>
+                <input type="text" id="datetwo111">
+               <label for="" id="statusone1">Mobile no.1</label>
+               <input type="text" id="statustwo111">
+            </div>
+            <div id="seven">
+               <label for="" id="dateone1">Mobile no.2</label>
+                <input type="text" id="datetwo1111">
+               <label for="" id="statusone1">Email Address-1(self)</label>
+               <input type="text" id="statustwo1111">
+            </div>
+            <div id="eight">
+               <label for="" id="email21">Email Address-2</label>
+                <input type="text" id="email22">
+               <label for="" id="none1"></label>
+               <input type="text" id="none2">
+            </div>
+        </div>
+
+        <div id="save">
+            <button id="btn1" onclick="savedata()">Save</button>
+            <button id="btn2" onclick="reset()">Reset</button>
+        </div>
+        <div id="particulars">
+            <div id="headhead">
+                <h1>Calculate the details</h1>
+                <div id="togg">
+                    <label for=""id="just">Monthly</label>
+                    <div id="too">
+                        <label class="switch">
+                            <input type="checkbox" id="tog" checked>
+                            <span class="slider round"></span>
+                        </label>
+                    </div>
+                    <label for="" id="just1">Annually</label>
+                </div>
+            </div>
+            <div class="pone">
+                <label for="" id="h1">1.Basic Details</label>
+            </div>
+            <div class="pone">
+                <label for="" id="salary">Your Age</label>
+                <input type="number" id="salary1" min="0">
+            </div>
+            <div class="pone">
+                <label for="" id="allow">The city you live</label>
+                <form action="" id="radioone">
+                    <input type="radio" id="metro" value="Metro City" name="prav">
+                    <label for="metro" id="metro1">Metro City</label>
+                    <input type="radio" id="nmetro"  value="Non-Metro City" name="prav">
+                    <label for="nmetro" id="nmetro1">Non Metro City</label>
+                </form>
+            </div>
+            <div class="pone">
+                <label for="" id="pre">You live in a</label>
+                <form action="" id="radiotwo">
+                    <input type="radio" id="rent" onclick="rentissue()" value="Rented House" name="pravs">
+                    <label for="metro" id="rent1">Rented House</label>
+                    <input type="radio" id="own" onclick="ownissue()" value="Self Owned" name="pravs">
+                    <label for="nmetro" id="own1">Self Owned</label>
+                </form>
+            </div>
+            <div class="pone">
+                <label for="" id="rentt">The rent you pay</label>
+                <input type="number" id="rentt1" min="0">
+            </div>
+
+
+
+            <div class="pone">
+                <label for="" id="h1">2.Income Details</label>
+            </div>
+            <div class="pone">
+                <label for="" id="pl">Your basic salary</label>
+                <input type="number" id="pl1" min="0">
+            </div>
+            <div class="pone">
+                <label for="" id="add11">Income from interest on savings</label>
+                <input type="number" id="add12" min="0">
+            </div>
+            <div class="pone">
+                <label for="" id="add21">Interest on deposits</label>
+                <input type="number" id="add22" min="0">
+            </div>
+            <div class="pone">
+                <label for="" id="add31">Income from rentals</label>
+                <input type="number" id="add32" min="0">
+            </div>
+             <div class="pone">
+                <label for="" id="add41">Income from any other source</label>
+                <input type="number" id="add42" min="0">
+             </div>
+
+            <div class="pone">
+                <label for="" id="h1">3.Excemptions</label>
+                
+            </div>
+            <div class="pone">
+                <label for="" id="sp">Special Allowances</label>
+                <input type="number" id="sp1" min="0">
+            </div>
+            <div class="pone">
+                <label for="" id="hra">House Rent Allowances</label>
+                <input type="number" id="hra1" min="0">
+            </div>
+            <div class="pone">
+                <label for="" id="da">Dearness allowance</label>
+                <input type="number" id="da1" min="0">
+            </div>
+
+
+            <div class="pone">
+                <label for="" id="h1">4.Capital Gains(Annually)</label>
+            </div>
+            <div class="pone">
+                <label for="" id="real">Real Estate</label>
+                <input type="number" id="real1" min="0">
+            </div>
+            <div class="pone">
+                <label for="" id="us">Unlisted Shares</label>
+                <input type="number" id="us1" min="0">
+            </div>
+            <div class="pone">
+                <label for="" id="ei">Equity Investments</label>
+                <input type="number" id="ei1" min="0">
+            </div>
+
+
+            <div class="pone">
+                <label for="" id="h1">4.Deductions(Annually)</label>
+            </div>
+            <div class="pone">
+                <label for="" id="ppf">Public Provident Fund</label>
+                <input type="number" id="ppf1" min="0">
+            </div>
+            <div class="pone">
+                <label for="" id="fd">Fixed Deposits</label>
+                <input type="number" id="fd1" min="0">
+            </div>
+            <div class="pone">
+                <label for="" id="ins">Insurance</label>
+                <input type="number" id="ins1" min="0">
+            </div>
+            <div class="pone">
+                <label for="" id="mf">Mutual Funds</label>
+                <input type="number" id="mf1" min="0">
+            </div>
+            <div class="pone">
+                <label for="" id="hi">Health Insurance</label>
+                <input type="number" id="hi1" min="0">
+            </div>
+            <div class="pone">
+                <label for="" id="nps">NPS Investment</label>
+                <input type="number" id="nps1" min="0">
+            </div>
+            <div class="pone">
+                <label for="" id="ed">Education Loan</label>
+                <input type="number" id="ed1" min="0">
+            </div>
+            
+            <div class="pone">
+                <label for="" id="don">Home Loan</label>
+                <input type="number" id="don1" min="0">
+            </div>
+            <div class="pone">
+                <label for="" id="cha">Charity</label>
+                <input type="number" id="cha1" min="0">
+            </div>
+            <div id="button">
+                <button onclick="calci()" id="but">Calculate</button>
+            </div>
+        </div>
+        <div id="sheet">
+           <div id="prav">
+            <div id="ftax">
+                <div id="taxable">Taxable income (old regime): &#x20B9</div>
+                <div id="value"></div>
+            </div>
+            <div id="ntax">
+                <div id="taxablen">Taxable income (new regime): &#x20B9</div>
+                <div id="valuen">123457</div>
+            </div>
+           </div>
+            <div id="reg">
+                <div id="og">
+                    <div id="oldr">Old Tax Regime:&#x20B9</div>
+                    <div id="ov"></div>
+                </div>
+                <div id="ng">
+                    <div id="newr">New Tax Regime:&#x20B9</div>
+                    <div id="nv"></div>
+                </div>
+            </div>
+        </div>
+        <div id="set">
+            <button onclick="resetting()" id="reset">Reset</button>
+        </div>
+    </div>
+    <script src="scriptone.js"></script>
+</body>
+</html>

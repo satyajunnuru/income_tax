@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body
+{
+    background:  #FAAFBA;
+    margin-bottom: 50px;
+}
+#navbar
+{
+    height: 90px;
+    padding-left: 20px;
+    padding-top: 20px;
+    /* border: 1px solid white; */
+    display: flex;
+    position: sticky;
+    top: 0;
+}
+#nav
+{
+    display: flex;
+    /* border: 1px solid white; */
+    margin-left: 1130px;
+    padding-top: 17px
+}
+#nav div
+{
+    padding-right: 22px;
+    font-size: 26px;
+    font-family: 'Roboto Serif';
+    text-decoration: underline;
+    color: #ff1d58;
+    cursor: pointer;
+}
+#navbar img
+{
+    height: 80px;
+    width: 70px;
+}
+#tax
+{
+    padding-left: 20px;
+    margin-top: 40px;
+    padding-right: 40px;
+}
+
+#contextone
+{
+    padding-top: 10px;
+    font-family: 'Pacifico', cursive;
+    font-size: 30px;
+}
+#tax h1
+{
+    text-decoration: underline;
+}
+li
+{
+    font-family: 'Pacifico', cursive;
+    font-size: 30px;
+    margin-top: 5px;
+}
+#contexttwo 
+{
+    padding-left: 20px;
+    margin-top: 40px;
+    padding-right: 40px;
+    
+}
+#contexttwo h1
+{
+    text-decoration: underline;
+}
+#contexttwo p
+{
+    padding-top: 10px;
+    font-family: 'Pacifico', cursive;
+    font-size: 30px;
+}
+#contextthree
+{
+    padding-left: 20px;
+    margin-top: 40px;
+    padding-right: 40px;
+    
+}
+#contextthree h1
+{
+    text-decoration: underline;
+}
+#contextthree p
+{
+    padding-top: 10px;
+    font-family: 'Pacifico', cursive;
+    font-size: 30px;
+}
+#contextfour
+{
+    padding-left: 20px;
+    margin-top: 40px;
+    padding-right: 40px;
+    
+}
+#contextfour h1
+{
+    text-decoration: underline;
+}
+#contextfour p
+{
+    padding-top: 10px;
+    font-family: 'Pacifico', cursive;
+    font-size: 30px;
+}
+#calci
+{
+    padding-left: 20px;
+    margin-top: 40px;
+    padding-right: 40px;
+    cursor: context-menu;
+}
+#calci:hover
+{
+    color: #ff1d58;
+    text-decoration: underline;
+}
+
+
+#textone,#texttwo,#textthree,#textfour
+{
+    display: none;
+}
+#one,#two,#three,#four
+{
+    cursor: pointer;
+}
